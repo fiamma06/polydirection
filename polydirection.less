@@ -1,0 +1,157 @@
+@main-light: #B0D5FD;
+@main-blue: #4E9FFB;
+@main-dark: #195AA0;
+
+body {
+  background: #616b95;
+  background: -moz-linear-gradient(45deg, #616b95 30%, #95ecdc);
+  background: -webkit-linear-gradient(45deg, #616b95 30%, #95ecdc);
+  background: linear-gradient(45deg, #616b95 30%, #95ecdc);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#616b95', endColorstr='#95ecdc', GradientType=1);
+}
+
+.shadow-line {
+  &:before,
+  &:after {
+    display: none;
+  }
+}
+
+.wallet .wallet-payment:hover {
+  background: rgba(97, 107, 149, .4) !important;
+  box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 10%) !important;
+}
+
+.default-button {
+  background: #616b95;
+  border-color: #616b95;
+  color: #FFF;
+
+  &:hover {
+    background: #4E9FFB;
+    border-color: #4E9FFB;
+    color: #FFF;
+  }
+
+  &.disabled,
+  &:disabled {
+    background: lighten(#616b95, 30%);
+    border-color: lighten(#616b95, 25%);
+
+    color: lighten(#616b95, 5%);
+  }
+}
+
+.menu .menu-list-link:hover,
+.menu .menu-list-link.active {
+  color: @main-light;
+
+  svg {
+    fill: @main-light;
+  }
+}
+
+.main-content-grid-item .item-copy {
+  color: @main-light;
+}
+
+.vm--modal {
+  background: rgba(97, 107, 149, .5) !important;
+}
+
+.modal-wrapper {
+  background: transparent;
+}
+.modal-wrapper-static {
+  background: #616b95;
+  background: -moz-linear-gradient(45deg, #616b95 30%, #95ecdc);
+  background: -webkit-linear-gradient(45deg, #616b95 30%, #95ecdc);
+  background: linear-gradient(45deg, #616b95 30%, #95ecdc);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#616b95', endColorstr='#95ecdc', GradientType=1);
+}
+
+.modal-wrapper,
+.modal-wrapper-static {
+  .modal-content-section {
+    background: #616b95 !important;
+
+    .modal-content-inner {
+      border-bottom: 1px solid rgba(255, 255, 255, .1);
+    }
+  }
+}
+
+.profile .profile-menu-items {
+  background: #616b95;
+
+  &:before {
+    background: #616b95;
+  }
+}
+
+.fixed-navigation {
+  background: #616b95;
+
+  .fixed-navigation-item.active span::before,
+  .fixed-navigation-item.active a::before {
+    background: #616b95;
+  }
+}
+
+.red-colored,
+.form-group.has-error .help-block {
+  color: #ff906b;
+}
+
+.form-control:focus {
+  border-color: lighten(#616b95, 25%);
+}
+
+.main-content-grid-item {
+  background: #ffffff0a;
+}
+
+.common-table td,
+.common-table th {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.common-table {
+  .counterparty-iban {
+    color: rgba(255, 255, 255, .6);
+  }
+
+  tr:hover {
+    td {
+      background: rgba(97, 107, 149, .4) !important;
+      box-shadow: none !important;
+    }
+  }
+}
+
+.main-content-grid-item.opened .main-content-expanded-options {
+  background: #616b95;
+}
+
+.wallet-footer {
+  background: #ffffff30 !important;
+}
+
+
+.logo {
+  position: relative;
+  right: 0;
+
+  img {
+    height: 50px;
+    position: absolute;
+    left: 0;
+    top: -25px;
+  }
+}
+
+.login-logo {
+  img {
+    height: 60px;
+  }
+}
